@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* --------------------------------stary night---------------------------------- */
+
+
+
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 6000px;
+    background: linear-gradient(#111425, #2c41b3);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.moon {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+    top: 300px;
+    left: 900px;
+    position: fixed;
+}
+
+
+.moon::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#111425, #2c41b3);
+    background-attachment: fixed;
+}
+
+
+.forest {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.scene i{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate linear infinite;
+    position: fixed;
+    
+    
+}
+
+
+i {
+    background-attachment: scroll;
+
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    10%, 90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+
+.cloud1 {
+    position: fixed;
+    top: 500px;
+    left: 0;
+    max-width: 600px;
+    z-index: 10000;
+    animation: animateCloud 90s linear infinite;
+}
+
+
+.cloud2 {
+    position: fixed;
+    top: 600px;
+    left: 0;
+    max-width: 500px;
+    z-index: 10000;
+    animation: animateCloud 35s linear infinite;
+}
+
+
+.cloud3 {
+    position: fixed;
+    top: 550px;
+    left: 0;
+    max-width: 600px;
+    z-index: 10000;
+    animation: animateCloud 100s linear infinite;
+}
+
+
+
+.cloud4 {
+    position: fixed;
+    top: 400px;
+    left: 0;
+    max-width: 300px;
+    z-index: 10000;
+    animation: animateCloud 90s linear infinite;
+    animation-delay: -20s;
+}
+
+
+.cloud5 {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    max-width: 500px;
+    z-index: 10000;
+    animation: animateCloud 40s linear infinite;
+    animation-delay: -5s;
+}
+
+
+.cloud6 {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    max-width: 400px;
+    z-index: 10000;
+    animation: animateCloud 30s linear infinite;
+    animation-delay: 0s;
+}
+
+
+@keyframes animateCloud {
+    0% {
+        transform: translateX(-100%) scale(1);
+    }
+
+    100% {
+        transform: translateX(400%) scale(1.5);
+    }
+}
+
+
+
+
+
+/* ----------------------------------secret message--------------------------- */
+
+
+
+
+#start {
+    position: absolute;
+    top: 50px;
+    left: 650px;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 150px;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+	font-size: 20px;
+	border: none;
+}
+
+button:hover {
+    background-color: #bdbdd1;
+    color: black;
+
+}
+
+
+
+
+
+
+#info {
+	letter-spacing: 2px;
+	color: rgb(255, 255, 255);
+	margin: 180px 0 0 50px;
+}
+
+#top_container {
+	position: fixed;
+	top: 200px;
+}
+
+.message {
+	padding: 30px 30px 30px 50px;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	font-size: 28px;
+	color: #ffffff;
+	width: 680px;
+}
+
+
+
+#bottom_container {
+	position: absolute;
+	top: 5270px;
+	height: 2000px;
+	width: 100%
+}
+
+
+#attribute {
+	text-align: right;
+	width: 680px;
+	padding: 0 30px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #bdbdd1;
+}
+
+a:hover {
+	color: #5f8360;
+}
+
+
+ #bottom {
+    color: #8f8fa3;
+}
+
+
+
+
+
+
+
+
+
+
+

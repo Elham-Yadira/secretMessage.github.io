@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  
+
+
+    <div class="scene">
+        <div class="moon"></div>
+        <img src="forest.png" class="forest">
+        <img src="cloud1.png" class="cloud1">
+        <img src="cloud2.png" class="cloud2">
+        <img src="cloud3.png" class="cloud3">
+        <img src="cloud1.png" class="cloud4">
+        <img src="cloud2.png" class="cloud5">
+        <img src="cloud3.png" class="cloud6">
+
+
+
+
+        <button id="start">First Click Here▶▷
+          <audio id="song">
+              <source src="1.mp3">
+          </audio>
+  
+      </button>
+  
+
+
+
+
+
+        <div id="info">Scroll down  </div>
+
+
+        <div id="top_container">
+          <div class="message" id="top">
+              
+               
+              
+            
+            <p>
+             Y u &nbsp; r &nbsp;t e &nbsp; u &nbsp; I  &nbsp; a e &nbsp;n &nbsp;y&nbsp; u u&nbsp; o &nbsp;T h j u&nbsp; P e s &nbsp; c m &nbsp; b c 
+            </p>
+            <p>
+              I &nbsp;m &nbsp; t l &nbsp; w i i g &nbsp; o &nbsp; y u
+            </p>
+          </div>
+        </div>
+      
+        <div id="bottom_container">
+          <div class="message" id="bottom">
+            <p>
+              &nbsp;o &nbsp; a e&nbsp; h &nbsp; d a &nbsp; &nbsp; m k&nbsp; i&nbsp; m &nbsp;s j d &nbsp;f  &nbsp;a a j d.&nbsp;l a e &nbsp; o e &nbsp; a k, 
+            </p>
+            <p>
+              &nbsp; a &nbsp; s i l &nbsp; a t n &nbsp; f r &nbsp; o
+            </p>
+          </div>
+      
+          <div id="attribute">
+            <a href="#">Miss Sorry</a>
+          </div>
+      
+       
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+
+const start = document.getElementById('start')
+
+start.addEventListener('click', () => {
+    document.getElementById('song').play();
+})
+
+
+
+
+        function stars() {
+            let count = 500
+            let scene = document.querySelector('.scene')
+            let i = 0
+            while(i < count) {
+                let star = document.createElement('i')
+                let x = Math.floor(Math.random() * window.innerWidth)
+                let y = Math.floor(Math.random() * window.innerHeight)
+                let duration = Math.random() * 10
+                let size = Math.random() * 2
+
+
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                star.style.animationDuration = 5 + duration +  's';
+                star.style.animationDelay = duration +  's';
+
+
+
+
+                scene.appendChild(star);
+                i++   
+            }
+        }
+
+
+        
+
+        stars()
+        stars()
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
